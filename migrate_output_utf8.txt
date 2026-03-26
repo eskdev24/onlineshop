@@ -1,0 +1,92 @@
+﻿
+  Dropping all tables  489.72ms DONE
+
+   INFO  Preparing database.  
+
+  Creating migration table  31.06ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table  148.82ms DONE
+  0001_01_01_000001_create_cache_table  81.90ms DONE
+  0001_01_01_000002_create_jobs_table  105.54ms DONE
+  2024_01_01_000003_create_categories_table  154.49ms DONE
+  2024_01_01_000004_create_brands_table  67.61ms DONE
+  2024_01_01_000005_create_products_table  383.15ms DONE
+  2024_01_01_000006_create_product_images_table  102.05ms DONE
+  2024_01_01_000007_create_product_attributes_table  223.36ms DONE
+  2024_01_01_000008_create_addresses_table  89.61ms DONE
+  2024_01_01_000009_create_carts_table  298.10ms DONE
+  2024_01_01_000010_create_wishlists_table  301.13ms DONE
+  2024_01_01_000011_create_orders_table  294.56ms DONE
+  2024_01_01_000012_create_payments_table  277.11ms DONE
+  2024_01_01_000013_create_reviews_table  196.97ms DONE
+  2024_01_01_000014_create_coupons_table  387.52ms DONE
+  2024_01_01_000015_create_shipping_tables  99.77ms DONE
+  2024_01_01_000016_create_misc_tables  176.32ms DONE
+  2024_01_01_000017_add_role_to_users_table  62.27ms DONE
+
+
+   INFO  Seeding database.  
+
+php : PHP Fatal error: 
+ Trait "Laravel\Sanctum
+\HasApiTokens" not 
+found in C:\xampp\htdoc
+s\gemini\buyvia\app\Mod
+els\User.php on line 10
+At line:1 char:1
++ php artisan 
+migrate:fresh --seed > 
+migrate_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (PHP Fatal err   
+ or....php on line     
+10:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+   Symfony\Component\ErrorHandler\Error\FatalError 
+
+  Trait "Laravel\Sanctum\HasApiTokens" not found
+
+  at app\Models\User.php:10
+      6Γûò use Illuminate\Foundation\Auth\User as Authenticatable;
+      7Γûò use Illuminate\Notifications\Notifiable;
+      8Γûò use Laravel\Sanctum\HasApiTokens;
+      9Γûò 
+  Γ₧£  10Γûò class User extends Authenticatable
+     11Γûò {
+     12Γûò     use HasApiTokens, HasFactory, Notifiable;
+     13Γûò 
+     14Γûò     protected $fillable = [
+
+
+   Whoops\Exception\ErrorException 
+
+  Trait "Laravel\Sanctum\HasApiTokens" not found
+
+  at app\Models\User.php:10
+      6Γûò use Illuminate\Foundation\Auth\User as Authenticatable;
+      7Γûò use Illuminate\Notifications\Notifiable;
+      8Γûò use Laravel\Sanctum\HasApiTokens;
+      9Γûò 
+  Γ₧£  10Γûò class User extends Authenticatable
+     11Γûò {
+     12Γûò     use HasApiTokens, HasFactory, Notifiable;
+     13Γûò 
+     14Γûò     protected $fillable = [
+
+  1   vendor\filp\whoops\src\Whoops\Run.php:520
+      Whoops\Run::handleError("Trait "Laravel\Sanctum\HasApiTokens" not found", "C:\xampp\htdocs\gemini\buyvia\app\Models\User.php")
+
+  2   [internal]:0
+      Whoops\Run::handleShutdown()
+
